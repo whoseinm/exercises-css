@@ -1,0 +1,49 @@
+body{
+    margin: 0 auto;
+    padding: 0px;
+}
+#mainDiv{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    width: 700px;
+    height: 500px;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 200px;
+}
+
+#container #circle{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: #F79F14;
+    position: absolute;
+    left: 270px;
+}
+
+#container #circle::after{
+    content: "";
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: #EC0014;
+    opacity: 0.8;
+    position: absolute;
+    left: -180px;
+}
+
+#container p{
+    font-size: 70px;
+    position: absolute;
+    bottom: -80px;
+    font-family: sans-serif;
+}
